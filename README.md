@@ -7,7 +7,7 @@ This document describes how to create custom blast databases using Docker contai
     docker run \
         -v /home/raytseli/google-key.json:/etc/google-key.json \
         -v /home/raytseli/t.prot:/tmp/t.prot \
-        -p 4000:80 yraytselis/make-custom-db:v5 \
+        yraytselis/make-custom-db:v5 \
         make_custom_blastdb.sh \
         prot \
         /tmp/t.prot \
@@ -32,7 +32,7 @@ This document describes how to create custom blast databases using Docker contai
     -- This parameter maps external to docker sequence file, /home/raytseli/t.prot, to the file /tmp/t.prot accessible in the docker container.
     The file must contain either sequence ids, one per line, or sequences in FASTA format. 
 
-`-p 4000:80 yraytselis/make-custom-db:v5`
+`yraytselis/make-custom-db:v5`
     -- This parameter is used to retrieve from docker hub the docker image used for creating docker container.
 
 `make_custom_blastdb.sh`
