@@ -4,7 +4,6 @@ This document describes how to create custom blast databases using Docker contai
 
 ## Sample command line
 
-    ```bash
     docker run \
         -v /home/raytseli/google-key.json:/etc/google-key.json \
         -v /home/raytseli/t.prot:/tmp/t.prot \
@@ -15,7 +14,6 @@ This document describes how to create custom blast databases using Docker contai
         gs://yan-customdb-test/d5 \
         aprot5 \
         "protein database 5"
-    ```
 
 
 ### Explanation
