@@ -26,7 +26,7 @@
 ## This file is intended to build Docker image for custom database creation and upload.
 ##
 
-FROM christiam/blast-workbench
+FROM ncbi/blast-workbench
 
 USER root
 RUN apt-get -y -m update && apt-get install -y wget
