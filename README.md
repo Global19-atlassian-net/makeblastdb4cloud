@@ -7,7 +7,7 @@ This document describes how to create custom blast databases using Docker contai
     docker run \
         -v /home/raytseli/google-key.json:/etc/google-key.json \
         -v /home/raytseli/t.prot:/tmp/t.prot \
-        yraytselis/make-custom-db:v5 \
+        ncbi/makeblastdb4cloud \
         make_custom_blastdb.sh \
         prot \
         /tmp/t.prot \
